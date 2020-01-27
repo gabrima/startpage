@@ -1,0 +1,99 @@
+@font-face {
+ font-family: "Typewriter";
+     src:url("Hack-Regular.ttf") format('truetype');
+}
+main{
+	width: 700px;
+	margin: auto;
+	border: 2px solid #000000;
+	padding: 0.1em 0.9em;
+	display: flex;
+	margin-top: 7px;
+}
+main *{
+	width: 100%;
+	font-family: Typewriter,monospace;
+	font-size: 1em;
+}
+header{
+    width:714px;
+    margin: auto;
+    margin-top: 19vh;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 3px 0 4px;
+    align-items: flex-end;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	margin: 19px 0;
+}
+#g::after{
+	color: gray;
+	content: "/g/";
+}
+#wg::after{
+	color: gray;
+	content: "/wg/";
+}
+#three::after{
+	color: gray;
+	content: "/3/";
+}
+p{
+	margin: 0.5em 0;
+	display: inline;
+}
+#links{
+	display: block;
+	margin:0;
+	margin-left: 0.8em;
+	padding-bottom: 10px;
+}
+#image{
+	background-image: url(huey.png);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 15px
+}
+#time{
+	margin-right: auto;
+	font-family: Typewriter,monospace;
+	font-size: 16px;
+}
+
+
+.scroll-left {
+ height: 40px;	
+ overflow: hidden;
+ position: relative;
+ color: black;
+ width: 730px;
+ margin: auto;
+}
+.scroll-left p {
+ position: absolute;
+ width: max-content;
+ height: 100%;
+ margin: 0;
+ line-height: 25px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ animation: scroll-left 40s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   { 
+ transform: translateX(21%); 		
+ }
+ 100% { 
+ transform: translateX(-103%); 
+ }
+}

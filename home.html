@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scoutmaster</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+			<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+<body>
+	<header>
+	<div class="time" id="time">
+				<script>
+					//document.getElementById("main").innerHTML = Date();
+					function updateClock() {
+						var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+						var m = new Date();
+						var dateString =
+						  (days[ m.getDay() ]) + " " +
+						  ("0" + (m.getMonth()+1)).slice(-2) +"/"+
+						  ("0" + m.getDate()).slice(-2) + "/" +
+						  m.getFullYear() +" "+
+						  ("0" + m.getHours()).slice(-2) + ":" +
+						  ("0" + m.getMinutes()).slice(-2) + ":" +
+						  ("0" + m.getSeconds()).slice(-2);
+						
+						// set the content of the element with the ID time to the formatted string
+						document.getElementById('time').innerHTML = dateString;
+
+						// call this function again in 1000ms
+						setTimeout(updateClock, 1000);
+					}
+					updateClock(); // initial call
+				</script>
+			</div>
+			<form name="form1" action="http://google.com/search"  method="get">
+						<input type="text" autocomplete="off" name="q" class="searchinput">
+					</form>
+			
+	</header>
+	<main>
+		<div id="links">
+			<a href="https://www.youtube.com/" id="yt"><p>youtube</p></a>
+			<a href="https://innsida.ntnu.no/user/gabrima/student/timeplan" id="class"><p>schedule</p></a>
+			<a href="https://ntnu.blackboard.com/" id="bb"><p>blackboard</p></a>
+			<a href="https://dnb.no/" id="dnb"><p>dnb</p></a>
+			<a href="https://reddit.com/" id="rdt"><p>reddit</p></a>
+			<a href="https://github.com/gabrima?tab=repositories" id="git"><p>github</p></a>
+		</div>
+				<div id="links">
+			<a href="https://reddit.com/"><p>mechmarket</p></a>
+			<a href="https://wikipedia.org/"><p>keyboards</p></a>
+			<a href="https://dnb.no/"><p>soundcloud</p></a>
+			<a href="https://www.youtube.com/" id="wg"><p>4chan</p></a>
+			<a href="https://boards.4chan.org/wg" id="g"><p>4chan</p></a>
+			<a href="https://ntnu.blackboard.com/" id="three"><p>4chan</p></a>
+
+		</div>
+		<div id="image"></div>
+	</main>
+<div class="scroll-left">
+<p>Locked in my room, four black walls//
+Tie the noose, no recall//
+No resolve, fuck withdrawal//
+Rather shoot up 'til I fall//
+Murder on call with the *59//
+Twenty years, and it seem like a lifetime//
+I been hanging every day from a lifeline//
+While these fuckers had a dinner every night time//
+Smoke, smokin' that dope off the foil, let me ball//
+Hoe, please don't call, don't fuck with y'all//
+Spray paint the walls with blood and whatever//
+Drag you outside, let you rot in the weather//
+I don't think I can explain any better//
+I'm $carecrow the terror and live for the lesser//
+My birth was an error//</p>
+</div>
+
+
+		<script>
+	document.getElementById("yt").accessKey = "1";
+	document.getElementById("class").accessKey = "2";
+	document.getElementById("bb").accessKey = "3";
+	document.getElementById("dnb").accessKey = "4";
+	document.getElementById("rdt").accessKey = "5";
+	document.getElementById("git").accessKey = "6";
+	</script>
+</body>
+</html>
