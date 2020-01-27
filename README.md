@@ -6,4 +6,4 @@ If you want to you can preview it
 
 heres a screenshot as well
 
-![alt text](./screenshot.PNG")
+![alt text](./screenshot.PNG)
